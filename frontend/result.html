@@ -1,0 +1,8 @@
+<!-- results.html -->
+<div class="results">
+  {% for image in images %}
+    <a href="/view/{{ image.id }}">
+      <img src="{{ image.path }}" alt="Image result" />
+    </a>
+  {% endfor %}
+</div>
